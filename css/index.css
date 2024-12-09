@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.jilin{
+    color: blue;
+    margin-left: 500px;
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+.top-r {
+   margin-left: 1000px;
+   margin-top: -30px;
+
+}
+a{
+    text-decoration: none;
+}
+.shouye {
+    margin-left: 500px;
+
+}
+.shouye-left {
+    margin-left: 1000px;
+    margin-top: -20px;
+
+}
+.gongsi {
+    width: 1228px;
+    height: 532px;
+    border: 1px solid red;
+    margin: auto;
+    position: relative;
+
+}
+.gongsi-r {
+    width: 734px;
+    height: 255px;
+    margin-top:200px ;
+
+}
+.gongsi-l {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+.gongsijianjie {
+    margin-left: 500px;
+ 
+}
+.gongsi-botton {
+    width: 1228px;
+    height:424px ;
+    border: 1px solid red;
+    margin: auto;
+}
+.gongsi-botton img {
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.yuangongpeixun {
+    margin-left: 600px;
+  
+}
+.jinying {
+    width: 1225px;
+    height: 425px;
+    border: 1px solid red;
+    margin: auto;
+    
+
+}
+.jinying img {
+    margin-top: 50px;
+    margin-left: 30px;
+
+}
+.jinyingtuandui {
+    margin-left: 600px;
+  
+}

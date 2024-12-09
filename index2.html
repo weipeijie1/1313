@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var str = '<img class  =  "foo bar" id = " baz" style =  "    background:red;color:white" src="abc.png" alt="图片"></img>';
+var r = /\s*([a-zA-Z\-]+)\s*=\s*['"]\s*(.*?)\s*['"]/g;
+var a = {};
+var m;
+while ((m = r.exec(str)) !== null) {
+    var key = m[1].trim(); 
+    var value = m[2].trim(); 
+    a[key] = value;
+}
+
+console.log(a);
+</script>
+</html>
