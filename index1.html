@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function base32(content) {
+    var base32 ="ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+    var res = "";
+    var binCode = [];
+    for (var i = 0; i < content.length; i++) {
+        var bin = content[i].charCodeAt(index).toString(2).replace(/^/, '0000000').slice(-8);
+        binCode.push(bin);
+    }
+    var binCodeStr = binCode.join('');
+    var binCodeStrPaddingZero = binCodeStr + "0".repeat(6 - (binCodeStr.length % 6));
+    var binCode6List = binCodeStrPaddingZero.match(/[01]{6}/g);
+    for (var j = 0; j < binCode6List.length; j++) {
+        var index = parseInt(binCode6List[j], 2);
+        res += base32[index];
+    }
+
+    return res;
+}
+
+console.log(base32("E"));
+</script>
+</html>
